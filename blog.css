@@ -97,3 +97,76 @@ aside h3 {
     width: 100%;
     display: block;
 }
+.pages {
+    text-align: center;
+    background: #ffffff;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 20px auto 20px auto;
+}
+
+.pages p {
+    border: 3px solid black;
+    background: #2196F3;
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 28px;
+    font-size: 23px;
+    line-height: 12px;
+}
+
+span {
+}
+
+.article__read-more {
+    text-align: center;
+}
+
+button {
+    width: 170px;
+    height: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .article {
+        margin: 20px 0 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .article.article--lg img {
+        width: 100%;
+        float: none;
+        max-width: 500px;
+    }
+
+    .article h3 {
+        text-align: center;
+    }
+
+    section {
+        margin: 0;
+        padding: 20px;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .pages p {
+        padding: 10px;
+        border: 1px solid black;
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    aside {
+        display: none;
+    }
+
+}
