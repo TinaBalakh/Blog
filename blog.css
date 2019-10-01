@@ -1,5 +1,6 @@
 main {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .article.article--lg img {
@@ -11,9 +12,6 @@ aside li img {
     width: 120px;
 }
 
-section {
-    background-color: #eeeeee;
-}
 
 aside {
     background: #eeeeee;
@@ -21,12 +19,14 @@ aside {
 }
 
 section {
+    flex: 1;
     margin: 10px;
+    background-color: #eeeeee;
     
 }
 
 .article__list {
-	display: flex;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -48,15 +48,7 @@ section {
 .article.article--lg {
     flex-grow: 1;
 }
-aside {
-    width: 300px;
-}
 
-main {
-    flex-wrap: wrap;
-}
-
-section {flex: 1;}
 
 .aside__inner {
     background: #ffffff;
@@ -65,6 +57,7 @@ section {flex: 1;}
 }
 
 aside {
+    width: 300px;
     padding: 20px;
 }
 
@@ -74,7 +67,7 @@ aside {
 }
 
 .aside__inner ul li {
-    margin: 10px 0 10px;
+    margin: 35px 0 10px;
     display: flex;
     align-items: center;
 }
@@ -96,4 +89,69 @@ aside h3 {
     text-align: right;
     width: 100%;
     display: block;
+}
+button {
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: ivory;
+    font-weight: 900;
+    font-size: medium;
+    font-family: fantasy;
+    margin: auto;
+    display: block;
+}
+
+p.il {
+    display: inline-block;
+    margin: 15px;
+    background-color: #008aff;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid black;
+}
+
+.article h3 {
+    text-align: center;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    padding: 0px;
+    background-color: white;
+    flex-wrap: wrap;
+    }
+   
+   @media screen and (max-width: 1030px) {
+    aside {
+        display: none;
+    }
+
+    body {
+    margin: 0;
+}
+
+section {
+    margin: 0;
+}
+
+.article {
+    width: 100%;
+    text-align: center;
+}
+.article img {
+    float: none;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 500px !important;
+
+}
 }
